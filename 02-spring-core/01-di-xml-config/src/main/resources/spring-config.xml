@@ -4,5 +4,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+    <bean class="com.training.GreetingConstructor">
+        <constructor-arg value="Hello"/>
+    </bean>
+
+    <bean class="com.training.GreetingSetter">
+        <property name="anotherBean" ref="anotherBean"/>
+    </bean>
+
+    <bean id="anotherBean" class="com.training.AnotherBean">
+
+    </bean>
 
 </beans>
